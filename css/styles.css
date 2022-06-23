@@ -1,0 +1,47 @@
+.container-content{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.video-fondo{
+    z-index: -100;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ancho-maximo{
+    width: 100%;
+    overflow: hidden;
+}
+
+.escala:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.escala:hover .ocultar-texto{
+    display: block;
+}
+.ocultar-texto{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, .4);
+
+}
+
+.img{
+    height: 250px;
+    width: 100%;
+}
+
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
