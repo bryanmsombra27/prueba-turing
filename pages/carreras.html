@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../js/app.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="relative">
+    <div class="ancho-maximo relative  carrer-background   ">
+        <nav class="container-content  flex  justify-between pt-9 ">
+            <h5 class="md:text-3xl text-md font-bold uppercase text-white">Shadow Technology</h5>
+             
+            <div class="flex hidden md:flex justify-between space-x-9 text-white font-bold text-xl">
+                <a href="/" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Home</a>
+                <a href="/pages/quehacemos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out   ">¿Qué hacemos?</a>
+                <a href="/pages/quienesomos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">¿Quienes somos?</a>
+                <a href="/pages/carreras.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Carreras</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                 <span class="hamburger-top"></span>
+                 <span class="hamburger-middle"></span>
+                 <span class="hamburger-bottom"></span>
+                </button>
+              </div>
+        </nav>
+            <!-- mobile menu  -->
+            <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col  w-full  py-1  pl-12 text-lg text-white uppercase bg-black">
+                <a href="/index.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out   ">Home</a>
+                <a href="/pages/quehacemos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out   ">¿Qué hacemos?</a>
+                <a href="/pages/quienesomos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">¿Quienes somos?</a>
+                <a href="/pages/carreras.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Carreras</a>
+              </div>
+      
+              <section class="mt-9 p-9 ">
+                <div class=" bg-[rgba(0,0,0,.8)]  p-6 rounded-lg w-full md:w-1/2 ">
+                <h1 class="uppercase font-bold md:text-5xl text-xl text-center  p-8 text-white md:p-9 leading-tight  md:text-left">Carreras</h1>
+
+                <p class="text-white text-lg text-center md:text-left w-full  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia, quia dolorem voluptatum iste illum magnam nobis eius temporibus laudantium ratione sint, velit delectus rem, repellendus provident iure nam itaque?</p>
+                </div>
+            </section>
+    </div> 
+
+    <section class="mt-9">
+        <p class="text-xl text-center text-gray-500 p-6 md:w-1/2  mx-auto">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere quidem repellat ratione, omnis ut delectus tempore numquam? Atque eos dolorem aliquam quidem distinctio commodi eveniet labore amet illum odio pariatur ipsa ratione, molestias qui repudiandae ex? Quasi et inventore dolore natus voluptatibus quod exercitationem nesciunt voluptate explicabo. Nihil, at?
+        </p>
+    </section>
+
+
+    <section class="container-content f-full flex items-center justify-center md:justify-around flex-col md:flex-row md:items-stretch mt-[100px] ">
+            <img src="../img/care.jpg" alt="beyond" class="img-care px-6 md:px-0">
+        <div class="mx-6">
+            <h5 class="text-white m-6 md:m-9  text-1xl font-bold uppercase text-gray-500 text-center md:text-left" >¿Qué es lo que nos hace diferentes?</h5>
+            <h2 class=" ml-4 font-bold uppercase text-lg md:text-3xl text-center md:text-left">Nos interesan las personas desde que las conocemos</h2>
+            <p class="text-lg text-center md:text-left text-gray-600 mt-9 ml-4">Lorem ipsum, dolor sit amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sed odit voluptas, sequi similique et aut minus voluptatuitatis laudantium aliquid nesciunt at eaque alias?
+            </p>
+
+            <p class="text-lg text-center md:text-left text-gray-600 mt-9 ml-4">Lorem ipsum, dolor sit amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio sed odit voluptas, sequi similique et aut minus voluptatum ad maxime ac unde facilis, error delectus sunt dolores blanditiis tenetur iure ipsa enim veritatis laudantium aliquid nesciunt at eaque alias?
+            </p>
+        </div>
+    </section>
+
+    <section class="mt-[100px] container-content  mx-auto p-6 md:p-0">
+            <h6 class="text-center text-gray-500 text-md md:text-lg uppercase font-bold">Nuestro equipo de Trabajo</h6>
+            <h2 class="text-center font-bold uppercase text-lg md:text-3xl mb-9">Conoce las opiniones de nuestro Personal</h2>
+            <div class="flex flex-col md:flex-row  justify-between gap-6 mt-9 space-y-9 space-x-0 md:space-x-8 md:space-y-0">
+                <div class="flex flex-row flex-wrap md:flex-col items-center justify-between gap-6 ">
+                    <img src="../img/persona1.jpg" alt="" class="testimonial mx-auto">
+                    <div class="mt-6 md:mt-0">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ex maxime sint itaque veniam libero beatae  adipisicing elit. Obcaecati tempore consectetur harum dolores deleniti mollitia fugiat similique omnis, minima explicabo. repellendus culpa amet quas! "</p>
+                        <h4 class="font-bold text-xl text-right p-6">Nicolas Brown</h4>
+                    </div>
+                </div>
+
+                <div class="flex flex-row flex-wrap md:flex-col items-center justify-between gap-6 ">
+                    <img src="../img/persona2.jpg" alt="" class="testimonial mx-auto">
+                    <div class="mt-6 md:mt-0">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ex maxime sint itaque veniam libero beatae  adipisicing elit. Obcaecati tempore consectetur harum dolores deleniti mollitia fugiat similique omnis, minima explicabo. repellendus culpa amet quas! "</p>
+                        <h4 class="font-bold text-xl text-right p-6">Beth Nicolson</h4>
+                    </div>
+                </div>
+
+                <div class="flex flex-row flex-wrap md:flex-col items-center justify-between gap-6 ">
+                    <img src="../img/persona3.jpg" alt="" class="testimonial mx-auto">
+                    <div class="mt-6 md:mt-0">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ex maxime sint itaque veniam libero beatae  adipisicing elit. Obcaecati tempore consectetur harum dolores deleniti mollitia fugiat similique omnis, minima explicabo. repellendus culpa amet quas! "</p>
+                        <h4 class="font-bold text-xl text-right p-6">Jhon Doe</h4>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="mt-[100px] h-full md:h-96 bg-gradient-to-r from-blue-500 to-cyan-500  ">
+            <div class="container-content  relative  h-full">
+             
+                <div class="bg-[#262626] flex flex-col md:absolute md:right-0 md:top-10 h-full p-9 md:rounded-xl w-full md:w-1/2 space-y-9">
+                    <h5 class="text-md uppercase text-white ">Inclusion y Respeto</h5>
+                    <h3 class=" text-lg md:text-2xl uppercase text-white font-bold">Nuestro ambiente laboral ofrece un entorno creativo y seguro para todos</h3>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, doloribus facere ab ducimus suscipit veniam illum. Dicta vel nesciunt fuga cupiditate deserunt exercitationem reiciendis possimus adipisci suscipit quas, magnam amet.</p>
+                </div>
+
+            </div>
+    </section>
+
+    <section class=" h-full mt-[150px] container-content ">
+                <h6 class="text-center text-gray-500 text-lg uppercase font-bold">Nuestra Experiencia</h6>
+                <h2 class=" ml-4 font-bold uppercase text-xl md:text-3xl text-center mb-0 md:mb-9 p-6 md:p-0">Elige una carrera emocionante y disfruta del viaje</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-9 p-6 md:p-0 space-y-6  md:space-y-0 mt-0 md:mt-[80px] ">
+                <div class="text-center">
+                    <i class="fa-solid fa-house-chimney-user text-cyan-700 fa-6x my-5"></i>
+                    <h3 class="my-3 font-bold text-lg md:text-2xl capitalize">Trabaja desde casa</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a dicta quia expedita in error ipsum odit molestias at, hic dolorum ratione enim atque iste quaerat distinctio perspiciatis. Accusamus, aspernatur.</p>
+                </div>
+                
+                <div class="text-center">
+                    <i class="fa-solid fa-person-circle-question fa-6x my-5 text-cyan-700"></i>
+                    <h3 class="my-3 font-bold text-lg md:text-2xl capitalize">Cuestionalo Todo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a dicta quia expedita in error ipsum odit molestias at, hic dolorum ratione enim atque iste quaerat distinctio perspiciatis. Accusamus, aspernatur.</p>
+                </div>
+                <div class="text-center">
+                    <i class="fa-solid fa-hand-pointer fa-6x my-5 text-cyan-700"></i>
+                    <h3 class="my-3 font-bold text-lg md:text-2xl capitalize">Elige tu Carrera</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a dicta quia expedita in error ipsum odit molestias at, hic dolorum ratione enim atque iste quaerat distinctio perspiciatis. Accusamus, aspernatur.</p>
+                </div>
+
+                <div class="text-center">
+                    <i class="fa-solid fa-heart fa-6x my-5 text-cyan-700"></i>
+                    <h3 class="my-3 font-bold text-lg md:text-2xl capitalize">Adora tu espacio de trabajo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a dicta quia expedita in error ipsum odit molestias at, hic dolorum ratione enim atque iste quaerat distinctio perspiciatis. Accusamus, aspernatur.</p>
+                </div>
+
+                <div class="text-center">
+                    <i class="fa-solid fa-bicycle fa-6x my-5 text-cyan-700"></i>
+                    <h3 class="my-3 font-bold text-lg md:text-2xl capitalize">Aprende nuevos horizontes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a dicta quia expedita in error ipsum odit molestias at, hic dolorum ratione enim atque iste quaerat distinctio perspiciatis. Accusamus, aspernatur.</p>
+                </div>
+                
+                <div class="text-center">
+                    
+                    <i class="fa-solid fa-lightbulb fa-6x my-5 text-cyan-700"></i>
+                    <h3 class="my-3 font-bold text-lg md:text-2xl capitalize">Desarrolla tu creatividad</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas a dicta quia expedita in error ipsum odit molestias at, hic dolorum ratione enim atque iste quaerat distinctio perspiciatis. Accusamus, aspernatur.</p>
+                </div>
+           
+            </div>
+        </section>  
+        
+      <section class="container-content md:mt-[80px] mt-0 mb-9 h-full md:h-96 ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div class="p-6">
+                <h6 class="text-center text-gray-500 text-lg uppercase font-bold">Viaje hacia el aprendizaje</h6>
+                <h2 class=" ml-4 font-bold uppercase text-xl md:text-3xl text-center mb-0 md:mb-9 p-6 md:p-0">Elige un plan que se acople a tus capacidades</h2>
+            </div>
+            
+                <div class=" relative cursor-pointer group p-6">
+                    <h4 class="text-left text-xl font-bold text-gray-400">Carrera</h4>
+                    <img src="/img/nature.jpg "  alt="nature">
+                    <div class="absolute bottom-0 right-10 md:right-0 bg-white group-hover:bg-cyan-600 group-hover:text-white ">
+                        <h3 class="text-lg font-bold  text-center my-4 px-6  "> Ingeniero en Ecosistemas</h3>
+                      
+                    </div>
+                </div>
+
+            <div class=" relative cursor-pointer group p-6">
+                <h4 class="text-left text-xl font-bold text-gray-400">Carrera</h4>
+                <img src="/img/industries.jpg"  alt="nature">
+                <div class="absolute bottom-0 right-10 md:right-0 bg-white group-hover:bg-cyan-600 group-hover:text-white ">
+                    <h3 class="text-lg font-bold  text-center my-4 px-6  "> Ingeniero Industrial</h3>
+                  
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="container-content my-9 h-full md:h-48">
+        <div class="flex flex-col md:flex-row justify-between">
+            <h1 class="md:text-5xl text-2xl p-6 text-center font-bold block">¿Listo para diseñar tu futuro?</h1>
+            <button class="m-6 w-content  md:w-1/4  md:m-0 p-3 text-white bg-cyan-600 font-bold text-lg md:text-2xl hover:bg-white hover:text-cyan-600 border-cyan-600  border-2 transition ease-in-out ">Ver ofertas</button>
+
+        </div>
+
+      </section>
+
+  
+    <footer class="bg-gray-800  ">
+        <div class="container-content flex gap-8 flex-wrap items-center justify-center">
+            <div class="flex flex-col justify-between my-9 space-y-6 items-center">
+                <h5 class="text-3xl  font-bold uppercase text-white text-center ">Shadow Technology</h5>
+                <p class="text-lg text-white ">¿Has visto nuestro trabajo?</p>
+                <p class="text-lg text-white text-center">Navega por el sitio para conocer mas sobre nosotros</p>
+            </div>
+            <div class="my-9 flex flex-col md:flex-row ">
+                <div class="mb-9 md:mb-0 mx-auto">
+                    <a href="../pages/quehacemos.html" class=" text-white text-xl  md:mx-6 hover:border-b-4 hover:border-white md:p-2 transition duration-150 ease-in-out   ">¿Qué hacemos?</a>
+
+                    <p class="text-white text-lg mt-6 text-center">Estrategia</p>
+                    <p class="text-white text-lg mt-6 text-center">Tecnologia</p>
+                    <p class="text-white text-lg mt-6 text-center">Casos de estudio</p>
+                </div>
+                <div class="mb-9 md:mb-0 mx-auto">
+                    <a href="/pages/quienesomos.html" class=" text-white text-xl  md:mx-6 hover:border-b-4 hover:border-white md:p-2 transition duration-150 ease-in-out  ">¿Quienes somos?</a>
+                    <p class="text-white text-lg mt-6 text-center">Cultura</p>
+                    <p class="text-white text-lg mt-6 text-center">Noticias</p>
+                    <p class="text-white text-lg mt-6 text-center">Diversificación</p>
+                    
+                </div>
+                <div class="mb-9 md:mb-0 mx-auto">   
+                    <a href="/" class=" text-white text-xl  md:mx-6 hover:border-b-4 hover:border-white p-2 transition duration-150 ease-in-out  ">Plataformas</a>
+                    <p class="text-white text-lg mt-6 text-center">AWS</p>
+                    <p class="text-white text-lg mt-6 text-center">Microsoft</p>
+                    <p class="text-white text-lg mt-6 text-center">Google</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

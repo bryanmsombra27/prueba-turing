@@ -125,3 +125,26 @@ img{
 .img-colaboration{
     width: 600px;
 }
+/*  */
+
+/* ESTILOS PAGINA CARRERAS*/
+.carrer-background{
+    background-image: url(../img/careers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    filter:contrast(1) saturate(7) grayscale(.8) hue-rotate(6deg);
+    min-height: 60vh;
+}
+.img-care{
+    width: 600px;
+    height: 600px;
+}
+.testimonial{
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+}
+/*  */
+
