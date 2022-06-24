@@ -6,27 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body >
+<body class="relative">
     <div class="ancho-maximo relative">
         <nav class="container-content  flex  justify-between pt-9 ">
-            <h5 class="text-3xl font-bold uppercase text-white">Shadow Technology</h5>
+            <h5 class="md:text-3xl text-md font-bold uppercase text-white">Shadow Technology</h5>
              
-            <div class="flex  justify-between space-x-9 text-white font-bold text-xl">
-                <a href="#hacemos" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out   ">¿Qué hacemos?</a>
-                <a href="/" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">¿Quienes somos?</a>
+            <div class="flex hidden md:flex justify-between space-x-9 text-white font-bold text-xl">
+                <a href="/" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Home</a>
+                <a href="/pages/quehacemos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out   ">¿Qué hacemos?</a>
+                <a href="/pages/quienesomos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">¿Quienes somos?</a>
+                <a href="/" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Carreras</a>
+      
+            </div>
+
+            <div class="md:hidden">
+                <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                 <span class="hamburger-top"></span>
+                 <span class="hamburger-middle"></span>
+                 <span class="hamburger-bottom"></span>
+                </button>
+              </div>
+        </nav>
+            <!-- mobile menu  -->
+            <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col  w-full  py-1  pl-12 text-lg text-white uppercase bg-black">
+                <a href="/pages/quehacemos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out   ">¿Qué hacemos?</a>
+                <a href="/pages/quienesomos.html" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">¿Quienes somos?</a>
                 <a href="/" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Carreras</a>
                 <a href="/" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Vision</a>
                 <a href="/" class="hover:border-b-4 hover:border-cyan-600 transition duration-150 ease-in-out  ">Contactanos</a>
-            </div>
-        </nav>
+              </div>
+      
         
-        <section class="hero h-96 ">
-            <div class="flex w-1/3 space-y-9 m-9 ">
-            <h1 class="uppercase font-bold text-5xl text-white p-9 leading-tight ">Building a better Future today</h1>
+        <section>
+            <div class="flex md:w-1/3 md:space-y-9 md:m-9  ">
+            <h1 class="uppercase font-bold md:text-5xl text-xl  p-8 text-white md:p-9 leading-tight ">Building a better Future today</h1>
             </div>
-            <video    autoplay class="video-fondo">
+            <video    autoplay="true" class="video-fondo">
                 <source autoplay src="videos/tecnology.webm"  type="video/webm" >
             </video>
         </section>
@@ -35,18 +53,18 @@
 
 
  
-    <section class="h-96 flex items-center justify-center flex-col">
-        <h5 class="text-white text-2xl font-bold uppercase m-9 text-cyan-600 text-center" id="hacemos">¿Qué hacemos?</h5>
+    <section class="h-full flex items-center justify-center flex-col">
+        <h5 class="text-white text-2xl font-bold uppercase m-9 text-cyan-600 text-center">¿Qué hacemos?</h5>
 
-        <h2 class="text-center font-bold  text-3xl px-6 mx-auto">Shadow Technology  es una empresa que ayuda personas y organizaciones a cumplir sus sueños </h2>
-        <button class="mx-auto uppercase bg-cyan-600 w-60 p-4 rounded-lg block mt-9 font-bold  text-white hover:bg-white hover:text-cyan-600 hover:border hover:border-cyan-600 transition ease-in-out duration-150">Ver más </button>
+        <h2 class="text-center font-bold text-xl  md:text-3xl px-6 mx-auto">Shadow Technology  es una empresa que ayuda personas y organizaciones a cumplir sus sueños </h2>
+        <a href="/pages/quehacemos.html" class="mx-auto uppercase bg-cyan-600 w-60 p-4 rounded-lg block mt-9 font-bold text-center  text-white hover:bg-white hover:text-cyan-600 hover:border hover:border-cyan-600 transition ease-in-out duration-150">Ver más </a>
     </section>
 
-    <section >
-        <h5 class="text-white text-2xl font-bold uppercase m-9 text-cyan-600 text-center" id="hacemos">Nuestro Trabajo</h5>
+    <section class="mt-[80px]">
+        <h5 class="text-white text-2xl font-bold uppercase md:m-9 text-cyan-600 text-center" id="hacemos">Nuestro Trabajo</h5>
 
-        <div class="d-grid    gap-9  container-content">
-            <div class="shadow-2xl relative escala">
+        <div class="d-grid  gap-[90px]  md:gap-9  container-content p-9 md:p-0">
+            <div class="shadow-2xl relative escala   ">
                 <h4 class="text-left text-xl font-bold text-gray-400">Caso de estudio</h4>
                 <img src="img/bussiness.jpg"   alt="bussiness">
                 <div class="ocultar-texto">
@@ -79,11 +97,72 @@
 
     </section>
 
-    <section class="bg-cyan-600 h-96 mt-[200px]">
-        <h4 class="text-center font-bold uppercase text-3xl pt-[60px]">Plataformas Asociadas</h4>
-        
-    </section>  
+    <section class="bg-cyan-600 h-full mt-[80px] sm:flex-wrap flex flex-col justify-evenly items-center">
+        <h4 class="text-center font-bold uppercase text-3xl pt-[60px] ">Plataformas Asociadas</h4>
 
+        <div class="flex  items-center justify-evenly my-9  container-content flex-wrap space-y-9 md:space-y-0">
+            <img src="img/assembla-icon.svg" alt="asembla"  class="w-28 cursor-pointer block mx-9 contrast-200 grayscale hover:filter-none" >
+            <img src="img/aws.svg" alt="aws" class="w-28 cursor-pointer block mx-9 contrast-200 grayscale hover:filter-none">
+            <img src="img/google.svg" alt="google" class="md:w-36 w-28 cursor-pointer block mx-9 contrast-200 grayscale hover:filter-none">
+            <img src="img/microsoft.svg" alt="microsoft" class="md:w-36 w-28 cursor-pointer block mx-9 contrast-200 grayscale hover:filter-none">
+
+         
+        </div>
+            <h5 class="font-bold text-xl uppercase text-center  p-4 md:p-0">Estamos asociados con las mejores empresas de tecnologia </h5>
+            <button class="p-4 w-36 rounded-lg bg-cyan-800 my-6 text-white">Ver más</button>
+        </section>  
+        
+        <section class="mt-9 h-full mb-6">
+        <div class="container-content flex flex-col md:flex-row ">
+            <div class="flex flex-col justify-between gap-9">
+            <a href="" >
+                <h4 class=" text-center md:text-left font-bold text-xl text-cyan-600">¿Quienes somos?</h4>
+            </a>
+            <h5 class="font-bold text-black md:text-3xl text-center md:text-left md:p-0 p-3 text-xl ">Somos Consejeros, estrategas, en general personas preparadas para brindar ayuda a quien lo  necesita</h5>
+            <p class=" text-md md:text-lg p-5 md:p-0 text-center md:text-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque consequatur et perspiciatis architecto, tenetur earum reprehenderi Lorem ipsum, dolor sit amet consectetur adipisicing elit. In beatae non sunt nostrum hic. Optio quas nisi nesciunt obcaecati ullam ducimus quaerat laboriosam temporibus, minus velit aspernatur rerum mollitia harum. t error officiis blanditiis fugiat unde quae quis aspernatur eligendi laboriosam alias, eaque quia dolor.</p>
+
+
+            <button class="p-4 w-36 rounded-lg bg-cyan-800 my-6 text-white mx-auto ">Ver más</button>
+        </div>
+          <img src="img/nature.jpg" class="rounded-full  md:w-96 md:h-96 w-64 h-64  mx-auto" alt="">
+        </div>
+    </section>
+
+  
+    <footer class="bg-gray-800  ">
+        <div class="container-content flex gap-8 flex-wrap items-center justify-center">
+            <div class="flex flex-col justify-between my-9 space-y-6 items-center">
+                <h5 class="text-3xl  font-bold uppercase text-white ">Shadow Technology</h5>
+                <p class="text-lg text-white ">¿Has visto nuestro trabajo?</p>
+                <p class="text-lg text-white text-center">Navega por el sitio para conocer mas sobre nosotros</p>
+            </div>
+            <div class="my-9 flex flex-col md:flex-row ">
+                <div class="mb-9 md:mb-0 mx-auto">
+                    <a href="#hacemos" class=" text-white text-xl  md:mx-6 hover:border-b-4 hover:border-white md:p-2 transition duration-150 ease-in-out   ">¿Qué hacemos?</a>
+
+                    <p class="text-white text-lg mt-6 text-center">Estrategia</p>
+                    <p class="text-white text-lg mt-6 text-center">Tecnologia</p>
+                    <p class="text-white text-lg mt-6 text-center">Casos de estudio</p>
+                </div>
+                <div class="mb-9 md:mb-0 mx-auto">
+                    <a href="/pages/quienesomos.html" class=" text-white text-xl  md:mx-6 hover:border-b-4 hover:border-white md:p-2 transition duration-150 ease-in-out  ">¿Quienes somos?</a>
+                    <p class="text-white text-lg mt-6 text-center">Cultura</p>
+                    <p class="text-white text-lg mt-6 text-center">Noticias</p>
+                    <p class="text-white text-lg mt-6 text-center">Diversificación</p>
+                    
+                </div>
+                <div class="mb-9 md:mb-0 mx-auto">   
+                    <a href="/" class=" text-white text-xl  md:mx-6 hover:border-b-4 hover:border-white p-2 transition duration-150 ease-in-out  ">Plataformas</a>
+                    <p class="text-white text-lg mt-6 text-center">AWS</p>
+                    <p class="text-white text-lg mt-6 text-center">Microsoft</p>
+                    <p class="text-white text-lg mt-6 text-center">Google</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>

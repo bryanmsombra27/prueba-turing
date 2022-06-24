@@ -2,6 +2,7 @@
     margin: 0 auto;
     max-width: 1200px;
 }
+
 .video-fondo{
     z-index: -100;
     position: absolute;
@@ -44,4 +45,83 @@
 .d-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+/* hamburger menu */
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s ;
+    position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top:0;
+    left: 0;
+    background-color: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+
+
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.open .hamburger-middle{
+    display: none;
+}
+
+/* ESTILOS PAGINA QUEHACEMOS */
+.img-background{
+    background-image: url(../img/teamwork.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    filter:contrast(1) saturate(7) grayscale(.8) hue-rotate(6deg);
+    min-height: 60vh;
+}
+
+.container-img{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/*  */
+
+/* ESTILOS PAGINA QUIENESOMOS */
+.identity-background{
+    background-image: url(../img/identity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    filter:contrast(1) saturate(7) grayscale(.8) hue-rotate(6deg);
+    min-height: 60vh;
+}
+.img-colaboration{
+    width: 600px;
 }
